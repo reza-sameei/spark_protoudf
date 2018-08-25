@@ -1,0 +1,18 @@
+syntax="proto2";
+
+package xyz.sigmalab.xtool.spark_protoudf;
+
+enum Gender {
+    UNDEFINED = 0;
+    FEMALE = 1;
+    MALE = 2;
+}
+
+message Person {
+    required    fixed64     internal = 1;
+    required    string      nickName = 2;
+    repeated    string      email = 3;
+    optional    Gender      gender = 4;
+    optional    Person      partner = 5;
+    repeated    Person      sibling = 6;
+}

@@ -1,0 +1,8 @@
+
+*.swp
+.idea
+target
+project/target
+moduel/macrodef/target
+module/macrodef/project/target
+
