@@ -10,4 +10,4 @@ libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.5"
 
 enablePlugins(ProtobufPlugin)
 
-test := { clean.value; (test in Test).value }
+test := { (clean in Test).value; (test in Test).value }

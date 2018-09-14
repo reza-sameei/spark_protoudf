@@ -15,4 +15,20 @@ message Person {
     optional    Gender      gender = 4;
     optional    Person      partner = 5;
     repeated    Person      sibling = 6;
+    repeated    Group       groups = 7;
+}
+
+message Group {
+    repeated    Person      member = 1;
+}
+
+message SimplePerson {
+    required    fixed64     internal = 1;
+    required    string      nickName = 2;
+    repeated    string      email = 3;
+    optional    Gender      gender = 4;
+    repeated    SimpleGroup group = 5;
+}
+message SimpleGroup {
+    required    string      name = 1;
 }
